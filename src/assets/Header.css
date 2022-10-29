@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intersection {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  border: 5px;
+  border-color: #e8462b;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  top: 0;
+  left: 0;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#VideoBg2 video {
+  display: none !important;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.smoothscroll {
+  visibility: hidden;
+  animation: Show 5s infinite 4s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes Show {
+  to {
+    visibility: visible;
+  }
+}
+
+.smoothscroll h5 {
+  font-family: "Montserrat";
+  animation: down 1.5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.smoothscroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smoothscroll i.fa {
+  padding: 0px;
+  color: #e8462b;
+  font-size: 36px;
+  animation: down 1.5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+.smoothscroll i.fa:hover {
+  color: black;
+}
+
+@media screen and (max-width: 475px) {
+  #VideoBg2 video {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+  }
+  #VideoBg video {
+    display: none;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}

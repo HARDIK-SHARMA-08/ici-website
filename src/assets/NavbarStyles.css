@@ -1,0 +1,131 @@
+.Logo {
+  height: 90%;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 95%;
+  height: 80px;
+  border-radius: 13px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.Navbar.active {
+  background: white;
+  box-shadow: 0 5px 15px rgba(31, 38, 135, 0.37);
+}
+.NavMenu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+}
+
+#NavigationBar .NavItem {
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #252525;
+  font-family: "Montserrat";
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  transition: transform 1s ease-in-out;
+}
+
+#NavigationBar .NavItem:hover {
+  border-bottom-color: #e8462b;
+}
+
+.HamBurgerIcon {
+  display: none;
+}
+
+.NavItem2 {
+  background-color: #e8462b;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.NavItem2 {
+  color: white;
+  background-color: #e8462b;
+}
+
+.NavItem2:hover {
+  border: 2px solid #e8462b;
+  background-color: white;
+}
+
+@media screen and (max-width: 1060px) {
+  .Logo {
+    height: 70%;
+  }
+  .Navbar {
+    z-index: 99;
+    padding: 0 20px;
+  }
+  .NavMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 13px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 13px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: -110%;
+    align-items: center;
+    padding: 100px 0 40px 0px;
+    margin: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  .NavMenu.active {
+    left: 0%;
+  }
+  #NavigationBar .NavItem {
+    display: block;
+    widows: 100%;
+    width: 100%;
+    /* padding: 10px 100px; */
+    color: black;
+    border-left: 5px solid transparent;
+    border-bottom: transparent;
+    transition: transform 1s ease-in-out;
+    z-index: 99;
+  }
+
+  #NavigationBar .NavItem:hover {
+    background-color: #ffdbd4;
+    border-left-color: #e8462b;
+    border-bottom: transparent;
+  }
+  .HamBurgerIcon {
+    display: block;
+    z-index: 100;
+    color: black;
+    size: 100px;
+  }
+}
