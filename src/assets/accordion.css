@@ -2,17 +2,16 @@
 .accordion__section {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 4px 0 4px 0;
+  width: 80%;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
+  height: 60px;
   color: black;
-  border-radius: 15px;
+  border-radius: 10px !important;
   cursor: pointer;
-  padding: 18px;
   display: flex;
   align-items: center;
   border: none;
@@ -28,11 +27,13 @@
 
 /* Style the accordion content title */
 .accordion__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: 600;
+  margin-top: 25px;
   text-align: left;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 /* Style the accordion chevron icon */
@@ -57,7 +58,7 @@
 .accordion__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   padding: 18px;
 }
 
@@ -78,5 +79,7 @@
   .accordion__title {
     position: relative;
     left: -15%;
+    font-size: 14px;
+    text-transform: uppercase;
   }
 }

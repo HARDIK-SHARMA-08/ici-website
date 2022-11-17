@@ -2,13 +2,6 @@ import React from "react";
 import Accordion from "../assets/accordion";
 import "../assets/Timeline.css";
 
-const myStyle = {
-  display: "Flex",
-  padding: "50px",
-  alignItems: "Center",
-  flexDirection: "Column",
-};
-
 class Tabs extends React.Component {
   state = {
     activeTab: this.props.children[0].props.label,
@@ -61,58 +54,72 @@ const Tab = (props) => {
 
 export const Timeline = (props) => {
   return (
-    <div style={myStyle} id="Timeline" className="text-center">
+    <div id="Timeline" className="text-center">
       <div className="section-title">
         <h2>Timeline </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-          dapibus leonec.
-        </p>
       </div>
+
       <Tabs>
         <Tab label="26 November 2022">
-            <div className="child">
-              <Accordion
-                title="What is your return policy?"
-                content=" <a href='#about'>Hello</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              />
-              <Accordion
-                title="Which languages does you support?"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              />
-              <Accordion
-                title="Can I use a custom domain?"
-                content="
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-              />
-            </div>
+          <div className="child">
+            <Accordion
+              title="Inaugural Ceremony"
+              time="Time- 10:00 AM"
+              content="Unveiling the path for furture opportunities and Peeping into the insights of Civil Engineering Industry"
+            />
+            <Accordion
+              title="Commencement of the Fest"
+              time="Time- 10:30 AM"
+              content="Initiation of Tech Events and Workshops <br /> Truss Making- 11:30 AM <br/> Bowling Alley- 11:30 AM <br/> Brick-O-Brick- 1:30 PM <br/> Crack the CAD- 1:30 PM"
+            />
+            <Accordion
+              title="चर्चा से समाधान- THE TECH TALK"
+              time="Time- 11:30 AM"
+              content="Panel Discussions aimed at stimulating minds to identify and rectify Engineeing Problems"
+            />
+            <Accordion
+              title="Masters' Meet"
+              time="Time- 2:00 PM"
+              content="Meeting the stalwarts for fruitful experience"
+            />
+            <Accordion
+              title="Rejoice"
+              time="Time- 3:00 PM"
+              content="Tap of non tech in the whirlwind of tech events"
+            />
+          </div>
         </Tab>
         <Tab label="27 November 2022">
-      
-            <div className="child">
-              <Accordion
-                title="What is your "
-                content=" <a href='#about'>Hello</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              />
-              <Accordion
-                title="Which languages does you support?"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              />
-              <Accordion
-                title="Can I use a custom domain?"
-                content="
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-              />
-            </div>
-   
+          <div className="child">
+            <Accordion
+              title="Walkathon and Cyclothon"
+              time="Time- 7:00 AM"
+              content="Explore the Sportsperson within you"
+            />
+            <Accordion
+              title="Technical Events, Workshop"
+              time="Time- 10:00 AM"
+              content="Bowling Alley (ROUND 2) <br />
+              Joist Kwik (ROUND 2) <br />
+              Time- 11:30 AM
+              The Hawk Eyes - Treasure Hunt <br />
+              Con Q - Quiz <br />"
+            />
+            <Accordion
+              title="Alumni Affairs"
+              content="Old bonds coming alive for creating new
+              memories"
+            />
+            <Accordion
+              title="Rejoice"
+              content="Tap of non tech in the whirlwind of tech events"
+            />
+            <Accordion
+              title="Valedictory Ceremony"
+              time="Time- 2:00 PM"
+              content="Bidding farewell to the fest with learnings for future"
+            />
+          </div>
         </Tab>
       </Tabs>
     </div>

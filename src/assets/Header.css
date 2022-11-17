@@ -34,13 +34,15 @@ video {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 40%;
+  top: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+  transition: 0.2s ease-in-out;
 }
+
 .smoothscroll {
   visibility: hidden;
   animation: Show 5s infinite 4s;
@@ -102,7 +104,30 @@ video {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 40%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #VideoBg2 video {
+    top: 10%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+  }
+  #VideoBg video {
+    display: none;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2%;
     display: flex;
     flex-direction: column;
     justify-content: center;

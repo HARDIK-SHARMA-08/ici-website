@@ -1,0 +1,93 @@
+
+#AboutUs .intro h1 {
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: auto;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50%;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: rgb(255, 255, 255);
+  font-size: auto;
+  text-align: center;
+  font-weight: 500;
+}
+header .intro-text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.background {
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 25px 25px 0 0;
+}
+
+#ici {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 50px;
+}
+
+#ici a {
+  color: black;
+}
+
+#ici a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#ici .about-text {
+  list-style: none;
+  padding: 0;
+  color: black;
+  font-size: auto;
+}
+
+@media screen and (max-width: 900px) {
+
+  #AboutUs .intro h1 {
+    font-family: "Montserrat";
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  #AboutUs p {
+    padding: 0 0;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+  }
+  #ici {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 20px;
+  }
+  #ici .background {
+    position: absolute;
+    top: -50%;
+    width: 90%;
+    height: 100%;
+    background: white;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 25px;
+    padding: 20px 20px;
+  }
+}

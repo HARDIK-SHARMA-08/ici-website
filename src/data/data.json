@@ -4,7 +4,7 @@
     "paragraph": "Swami Keshvanad Institute of Technology, Management and Gramothan, Jaipur"
   },
   "About": {
-    "paragraph": "ICI fest plays an important role in the curriculum of a college. It is one such event at Swami Keshvanand Institute of Technology and Management , Gramothan, Jaipur, where young brains get to showcase their skills and compete with others to find the best. It is not just about the competitions but also an arena where a lot of those new ideas are seen live, learnt and inspired"
+    "paragraph": "The fest will aspire the young brains to showcase their skills and compete with others by participating in various technical events and workshop."
   },
   "resume": {
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
@@ -77,74 +77,66 @@
   },
   "Services": [
     {
-      "icon": "img/Event.png",
-      "name": "SERIES OF EVENTS",
-      "text": "Events to be conducted to foster realistic approach in young budding engineers."
+      "name": "Events and Workshop",
+      "img": "img/1.png"
     },
     {
-      "icon": "img/Seminar.png",
-      "name": "INTERACTIVE SEMINARS",
-      "text": "Interactive seminars sessions to be conducted to enable the students and teach them the essential skills to start in the field."
+      "name": "Charcha se Samadhan",
+      "img": "img/1.png"
     },
     {
-      "icon": "img/Exhibition.png",
-      "name": "WORKSHOPS & EXHIBITION",
-      "text": "Workshops and exhibition to beconducted to develop new prowess and build brand proximity."
+      "name": "Civil Expo",
+      "img": "img/1.png"
     }
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "Name",
-      "job": "Designation"
+      "img": "img/team/1.png",
+      "name": "Sonal Meena"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Name",
-      "job": "Designation"
+      "img": "img/team/2.png",
+      "name": "Jenisha Devnani"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Name",
-      "job": "Designation"
+      "img": "img/team/3.png",
+      "name": "Chitransh Srivastava"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Name",
-      "job": "Designation"
+      "img": "img/team/4.png",
+      "name": "Youvan Jain"
+    }
+  ],
+  "TechTeam": [
+    {
+      "img": "img/team/5.png",
+      "name": "Sumit Dangda"
+    },
+    {
+      "img": "img/team/6.png",
+      "name": "Hardik Sharma"
     }
   ],
   "Sponsor": [
     {
-      "img": "img/1.png"
-    },
-    {
-      "img": "img/2.png"
-    },
-    {
-      "img": "img/3.png"
+      "img": "img/5.png"
     },
     {
       "img": "img/4.png"
     },
     {
-      "img": "img/5.png"
+      "img": "img/1.png"
     },
     {
-      "img": "img/6.png"
-    },
-    {
-      "img": "img/7.png"
-    },
-    {
-      "img": "img/8.png"
+      "img": "img/2.png"
     }
   ],
   "Contact": {
-    "address": "Ram Nagariya Rd, Shivam Nagar, Jagatpura, Jaipur, Rajasthan 302017 ",
+    "address": "SKIT Campus, Ram Nagariya Rd, Shivam Nagar, Jagatpura, Jaipur, Rajasthan 302017 ",
     "phone": "+91 8278631943",
     "phone1": "+91 7742149493",
-    "email": "ici@skit.ac.in",
+    "phone2": "+91 93763 43101",
+    "email": "icifest@skit.ac.in",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"

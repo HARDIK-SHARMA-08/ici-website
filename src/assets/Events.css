@@ -1,0 +1,346 @@
+#Events {
+  padding: 200px 0px 10px 0px;
+}
+
+#Events img {
+  padding: 0px 30px 40px 30px;
+  width: 80%;
+}
+
+#Events .title {
+  position: relative;
+  font-size: xxx-large;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+#Events .title::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #e8462b 0%, #e8462b 100%);
+  height: 4px;
+  width: 100px;
+  bottom: 0;
+  margin-left: -50px;
+  left: 50%;
+}
+
+#Events .child h2 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#Events h3 {
+  font-family: "Montserrat" !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+#Events ul {
+  list-style-type: square;
+}
+
+#Events .child p {
+  padding-bottom: 5px !important;
+  font-size: large;
+  text-align: left;
+  padding: 0px 80px;
+  text-justify: inter-word;
+}
+
+#Events .tab {
+  font-family: "Montserrat" !important;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#Events .tabs {
+  font-family: "Montserrat" !important;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 70%;
+  text-align: center;
+}
+
+#Events .tab-buttons {
+  margin-bottom: 50px;
+}
+
+#Events .wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "auto auto auto auto";
+  gap: 30px;
+  padding: 0 60px 60px 60px;
+}
+
+#Events .EventImage {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+}
+
+#Events .wrapper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#Events .item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+  position: relative;
+  height: 200px;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 25px;
+}
+#Events .item1 {
+  background: url(../assets/truss.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item2 {
+  background: url(../assets/cad.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item3 {
+  background: url(../assets/brick.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item4 {
+  background: url(../assets/bowl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item5 {
+  background: url(../assets/cyclothon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item6 {
+  background: url(../assets/workshop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item7 {
+  background: url(../assets/quiz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Events .item8 {
+  background: url(../assets/hunt.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Events .EventMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: normal;
+  white-space: nowrap;
+  color: white;
+}
+
+#Events .Explore {
+  background-color: rgb(0, 0, 0);
+  opacity: 70%;
+  border-radius: 0 0 25px 25px;
+  width: 100%;
+  position: absolute;
+  margin: 0 0;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 5px;
+  color: white;
+  font-size: large;
+}
+
+#Events .Explore:hover {
+  background-color: rgb(0, 0, 0);
+  opacity: 100%;
+  padding: 5px 5px;
+  color: #e8462b;
+  font-size: large;
+}
+
+#Events .item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover,
+.item8:hover {
+  transform: scale(1.05);
+}
+
+#Events .Event1,
+#Events .Event2,
+#Events .Event3,
+#Events .Event4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: normal;
+  white-space: nowrap;
+  color: white;
+}
+
+#Events
+  .Event1:hover
+  #Events
+  .Event2:hover
+  #Events
+  .Event3:hover
+  #Events
+  .Event4:hover {
+  color: black;
+}
+
+#Events button {
+  font-family: "Montserrat" !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 10px 5px 10px;
+  font-size: auto;
+  background: rgb(230, 230, 230);
+  border-radius: 500px;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 0px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.2s;
+}
+
+#Events button.active {
+  color: white;
+  background-color: #e8462b;
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+@media screen and (max-width: 990px) {
+  #Events {
+    padding: 160px 0px 10px 0px;
+  }
+
+  #Events img {
+    width: 100%;
+  }
+
+  #Events .title {
+    font-size: xx-large;
+  }
+  #Events .child p {
+    padding-bottom: 5px !important;
+    font-size: auto;
+    text-align: left;
+    padding: 0px 30px;
+    text-justify: inter-word;
+  }
+
+  #Events .wrapper {
+    display: grid;
+    grid-template-areas: "myArea";
+    gap: 30px;
+    padding: 0 30px 70px 30px;
+  }
+  #Events .item1,
+  #Events .item2,
+  #Events .item3,
+  #Events .item4,
+  #Events .item5,
+  #Events .item6,
+  #Events .item7,
+  #Events .item8 {
+    grid-area: myArea;
+    height: 150px;
+    border-radius: 25px;
+  }
+
+  #Events .Event1,
+  #Events .Event2,
+  #Events .Event3,
+  #Events .Event4 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #Events .item1:hover,
+  .item2:hover,
+  .item3:hover,
+  .item4:hover {
+    transform: scale(1);
+  }
+
+  #Events .Explore {
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+    position: absolute;
+    margin: 0 0;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 5px;
+    color: #ffffff;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #Events button {
+    padding: 10px 20px;
+    border-radius: 500px;
+  }
+
+  #Events .tab {
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+    margin-top: 10vh;
+  }
+}

@@ -1,50 +1,68 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import React, { Component } from "react";
 import "../assets/NavbarStyles.css";
 import { Squash as Hamburger } from "hamburger-react";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component {
   state = { clicked: false };
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
+  componentDidMount() {
+    window.addEventListener("scroll", this.resizeHeaderOnScroll);
+  }
+  resizeHeaderOnScroll() {
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 25,
+      headerEl = document.getElementById("NavigationBar");
+
+    if (distanceY > shrinkOn) {
+      headerEl.classList.add("Shrink");
+    } else {
+      headerEl.classList.remove("Shrink");
+    }
+  }
+
   render() {
     return (
       <nav className="NavbarScrolled">
-        <div className="Navbar active" id="NavigationBar">
+        <div className="Navbar" id="NavigationBar">
           <img src={logo} alt="" className="Logo" />
 
           <div className="HamBurgerIcon" onClick={this.handleClick}>
             <Hamburger rounded size={25}></Hamburger>
           </div>
+          <div className={this.state.clicked ? "NavMenu bg" : "NavMenu"}> </div>
           <ul className={this.state.clicked ? "NavMenu active" : "NavMenu"}>
             <li className="NavBarItem">
-              <a href="#about" className="NavItem">
-                ABOUT
-              </a>
+              <Link to="/">
+                <a href="# " className="NavItem">
+                  HOME
+                </a>
+              </Link>
             </li>
 
             <li className="NavBaritem">
-              <a href="#Resume" className="NavItem">
-                TIMELINE
-              </a>
+              <Link to="/events">
+                <a href="# " className="NavItem">
+                  EVENTS
+                </a>
+              </Link>
             </li>
 
             <li className="NavBaritem">
-              <a href="#team" className="NavItem">
-                GUEST TALK
-              </a>
+              <Link to="/about">
+                <a href="# " className="NavItem">
+                  ABOUT US
+                </a>
+              </Link>
             </li>
-
-            <li className="NavBaritem">
-              <a href="#Sponsor" className="NavItem">
-                SPONSORS
-              </a>
-            </li>
-
+            
+            <Link to="/register-now">
             <li className="button">
               <a
-                href="#team"
+                href="https://forms.gle/6P4nZy9uK23sxyyy8"
                 className="NavItem2"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -52,6 +70,7 @@ class Navigation extends Component {
                 REGISTER NOW
               </a>
             </li>
+            </Link>
           </ul>
         </div>
       </nav>

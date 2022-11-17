@@ -6,7 +6,6 @@ function Accordion(props) {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
   const [setRotate, setRotateState] = useState("accordion__icon");
-
   const content = useRef(null);
 
   function toggleAccordion() {
@@ -29,6 +28,10 @@ function Accordion(props) {
         style={{ maxHeight: `${setHeight}` }}
         className="accordion__content"
       >
+        <div
+          className="accordion__time"
+          dangerouslySetInnerHTML={{ __html: props.time }}
+        />
         <div
           className="accordion__text"
           dangerouslySetInnerHTML={{ __html: props.content }}

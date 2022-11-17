@@ -1,0 +1,366 @@
+#RegisterNow {
+  padding: 200px 0px 10px 0px;
+}
+
+#RegisterNow .accomodation {
+  background-color: #ffc2b7;
+  padding: 30px;
+  margin: 0 50px 50px 50px;
+  border-radius: 20px;
+}
+
+#RegisterNow .accomodation > h3 {
+  margin: 0;
+  color: #e8462b;
+}
+
+#RegisterNow .wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "auto auto auto";
+  gap: 30px;
+  padding: 0 100px 60px 100px;
+}
+
+#RegisterNow .EventImage {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+}
+
+#RegisterNow .wrapper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#RegisterNow .Item1,
+.Item2,
+.Item3,
+.Item4,
+.Item5,
+.Item6,
+.Item7,
+.Item8,
+.Item9 {
+  position: relative;
+  height: 150px;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 25px;
+}
+#RegisterNow .Item1 {
+  background: url(../assets/truss.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#RegisterNow .Item2 {
+  background: url(../assets/cad.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#RegisterNow .Item3 {
+  background: url(../assets/brick.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#RegisterNow .Item4 {
+  background: url(../assets/bowl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RegisterNow .Item5 {
+  background: url(../assets/cyclothon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RegisterNow .Item6 {
+  background: url(../assets/hunt.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RegisterNow .Item7 {
+  background: url(../assets/workshop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RegisterNow .Item8 {
+  background: url(../assets/quiz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RegisterNow .Item9 {
+  background: url(../assets/walk-06.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RegisterNow .Explore {
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  position: absolute;
+  margin: 0 0;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 5px;
+  color: #e8462b;
+  font-size: large;
+}
+
+#RegisterNow .Explore:hover {
+  background-color: white;
+  opacity: 100%;
+  border-radius: 10px;
+  width: 70%;
+  padding: 5px 5px;
+  color: #e8462b;
+  font-size: large;
+}
+
+#RegisterNow .Explore:active {
+  background-color: white;
+  opacity: 100%;
+  border-radius: 10px;
+  width: 70%;
+  padding: 5px 5px;
+  color: #e8462b;
+  font-size: large;
+}
+
+#RegisterNow .Event1,
+#RegisterNow .Event2,
+#RegisterNow .Event3,
+#RegisterNow .Event4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: normal;
+  white-space: nowrap;
+  color: white;
+}
+
+#RegisterNow .Event {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: normal;
+  white-space: nowrap;
+  color: white;
+}
+
+#RegisterNow
+  .Event1:hover
+  #RegisterNow
+  .Event2:hover
+  #RegisterNow
+  .Event3:hover
+  #RegisterNow
+  .Event4:hover {
+  color: black;
+}
+
+#RegisterNow button {
+  font-family: "Montserrat" !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 10px 5px 10px;
+  font-size: auto;
+  background: rgb(230, 230, 230);
+  border-radius: 500px;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 0px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.2s;
+}
+
+#RegisterNow button.active {
+  color: white;
+  background-color: #e8462b;
+}
+
+@media screen and (max-width: 1084px) {
+  #RegisterNow .accomodation {
+    background-color: #ffc2b7;
+    padding: 30px;
+    margin: 0 20px 30px 20px;
+    border-radius: 20px;
+  }
+  #RegisterNow .accomodation > h3 {
+    margin: 0;
+    font-size: large;
+    color: #e8462b;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  #RegisterNow {
+    padding: 160px 0px 10px 0px;
+  }
+
+  #RegisterNow .title {
+    font-size: xx-large;
+  }
+  #RegisterNow .child p {
+    padding-bottom: 5px !important;
+    font-size: auto;
+    text-align: left;
+    padding: 0px 10px;
+    text-justify: inter-word;
+  }
+
+  #RegisterNow .wrapper {
+    display: grid;
+    grid-template-areas: "auto";
+    gap: 10px;
+    padding: 0 30px 70px 30px;
+  }
+  #RegisterNow .Item1,
+  #RegisterNow .Item2,
+  #RegisterNow .Item3,
+  #RegisterNow .Item4,
+  #RegisterNow .Item5,
+  #RegisterNow .Item6,
+  #RegisterNow .Item7,
+  #RegisterNow .Item8,
+  #RegisterNow .Item9 {
+    height: 150px;
+  }
+
+  #RegisterNow .Event1,
+  #RegisterNow .Event2,
+  #RegisterNow .Event3,
+  #RegisterNow .Event4 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #RegisterNow .Event {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: normal;
+    white-space: nowrap;
+    color: white;
+  }
+  #RegisterNow .Item1:hover,
+  .Item2:hover,
+  .Item3:hover,
+  .Item4:hover {
+    transform: scale(1);
+  }
+
+  #RegisterNow .alert1 {
+    position: relative;
+    background-color: #ffb3a6;
+    height: 80px;
+    padding: 0 30px;
+    margin: 5px 30px 40px;
+    border-radius: 15px;
+  }
+
+  #RegisterNow .alert1 > img {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  #RegisterNow .alert1 > p {
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: large;
+    position: absolute;
+    margin-left: 20px;
+    font-size: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: #e8462b;
+  }
+
+  #RegisterNow .alert1 > p > a {
+    margin-left: 20px;
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #RegisterNow button {
+    padding: 10px 20px;
+    border-radius: 500px;
+  }
+
+  #RegisterNow .tab {
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  #RegisterNow .alert1 {
+    position: relative;
+    background-color: #ffb3a6;
+    height: 90px;
+    padding: 0 30px;
+    margin: 5px 30px 40px;
+    border-radius: 15px;
+  }
+
+  #RegisterNow .alert1 > img {
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  #RegisterNow .alert1 > p {
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: medium;
+    text-align: left;
+    padding: 0;
+    line-height: normal;
+    white-space: inherit;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #e8462b;
+  }
+
+  #RegisterNow .alert1 > p > a {
+    margin-left: 10px;
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: large;
+    white-space: nowrap;
+  }
+}
