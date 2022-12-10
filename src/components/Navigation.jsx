@@ -1,6 +1,6 @@
 import logo from "../assets/logo.svg";
 import React, { Component } from "react";
-import "../assets/NavbarStyles.css";
+import "../assets/css/NavbarStyles.css";
 import { Squash as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
 
@@ -62,7 +62,7 @@ class Navigation extends Component {
             <Link to="/register-now">
             <li className="button">
               <a
-                href="https://forms.gle/6P4nZy9uK23sxyyy8"
+                href="#a"
                 className="NavItem2"
                 target="_blank"
                 rel="noopener noreferrer"

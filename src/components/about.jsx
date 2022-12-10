@@ -1,9 +1,9 @@
-import Tech1 from "../assets/Tech1.png";
-import Expo1 from "../assets/expo1.png";
-import Workshop1 from "../assets/Workshop1.png";
-import Meet1 from "../assets/meet1.png";
-import Panel1 from "../assets/panel1.png";
-import Rejoice1 from "../assets/Rejoice.png";
+import Tech1 from "../assets/img/icons/Tech1.png";
+import Expo1 from "../assets/img/icons/expo1.png";
+import Workshop1 from "../assets/img/icons/Workshop1.png";
+import Meet1 from "../assets/img/icons/meet1.png";
+import Panel1 from "../assets/img/icons/panel1.png";
+import Rejoice1 from "../assets/img/icons/Rejoice.png";
 
 export const About = (props) => {
   return (
@@ -35,7 +35,7 @@ export const About = (props) => {
           <div className="box1">
             <img src={Tech1} alt="" srcset="" />
             <h3>
-              Tech Events & <br /> Workshop
+              Tech Events & <br /> Workshops
             </h3>
           </div>
           <div className="box2">

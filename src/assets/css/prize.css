@@ -1,0 +1,39 @@
+#prize {
+  margin-top: 70px;
+  margin-bottom: 160px;
+}
+
+#prize .PrizeBg {
+  background-color: #e8462b;
+  margin: 0 50px;
+  position: relative;
+  height: 300px;
+  border-radius: 25px;
+}
+
+#prize img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200%;
+}
+
+@media screen and (max-width: 992px) {
+  #prize {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  #prize .PrizeBg {
+    position: relative;
+    margin: 0 5px;
+    height: 150px;
+  }
+
+  #prize img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

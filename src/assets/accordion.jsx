@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Chevron from "./Chevron";
-import "./accordion.css";
+import "./css/accordion.css";
 
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
@@ -29,12 +29,32 @@ function Accordion(props) {
         className="accordion__content"
       >
         <div
+          className="accordion__text"
+          dangerouslySetInnerHTML={{ __html: props.content }}
+        />
+        <div
           className="accordion__time"
           dangerouslySetInnerHTML={{ __html: props.time }}
         />
         <div
           className="accordion__text"
-          dangerouslySetInnerHTML={{ __html: props.content }}
+          dangerouslySetInnerHTML={{ __html: props.content2 }}
+        />
+        <div
+          className="accordion__time"
+          dangerouslySetInnerHTML={{ __html: props.time2 }}
+        />
+         <div
+          className="accordion__time"
+          dangerouslySetInnerHTML={{ __html: props.time4 }}
+        />
+        <div
+          className="accordion__text"
+          dangerouslySetInnerHTML={{ __html: props.content3 }}
+        />
+        <div
+          className="accordion__time"
+          dangerouslySetInnerHTML={{ __html: props.time3 }}
         />
       </div>
     </div>

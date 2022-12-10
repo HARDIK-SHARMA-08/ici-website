@@ -1,0 +1,20 @@
+#Closed {
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 725px) {
+  #Closed {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  #Closed h2{
+    text-align: left;
+    font-size: x-large;
+  }
+}

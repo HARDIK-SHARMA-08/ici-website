@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/Jaipur.css";
+import "../assets/css/Jaipur.css";
 
 export const Jaipur = (props) => {
   return (

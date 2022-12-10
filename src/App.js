@@ -14,6 +14,7 @@ import { Cyclothon } from "./Pages/Cyclothon";
 import { Workshop } from "./Pages/Workshop";
 import { Quiz } from "./Pages/ConQ";
 import { HUnt } from "./Pages/TreasureHunt";
+import { Closed } from "./Pages/Closing";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
@@ -27,6 +28,7 @@ const App = () => {
         <ScrollToTop />
         <Switch>
           <Route exact path="/" component={Main} />
+          <Route path="/closed" component={Closed} />
           <Route path="/events" component={Events} />
           <Route path="/crack-the-cad" component={CracktheCAD} />
           <Route path="/joist-kwik" component={JoistKwik} />

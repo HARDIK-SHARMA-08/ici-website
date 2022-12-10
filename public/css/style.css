@@ -165,12 +165,6 @@ header .intro-text {
   padding: 0;
 }
 
-#about img {
-  width: 600px;
-  background-color: #ff7259;
-  padding: 20px 20px;
-  border-radius: 25px;
-}
 #about p {
   color: black;
   line-height: 24px;
@@ -208,19 +202,21 @@ header .intro-text {
   color: rgb(0, 0, 0);
   text-align: center;
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 #about img {
+  background-color: #e8462b;
+  padding: 20px 20px;
+  border-radius: 25px;
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 40%;
 }
-
 
 /* @media screen and (max-width: 1400px) {
   #about {
@@ -278,7 +274,6 @@ header .intro-text {
 } */
 
 @media screen and (max-width: 1000px) {
- 
   #about .whatIn {
     width: 100%;
     display: grid;
@@ -295,6 +290,58 @@ header .intro-text {
     padding: 50px 0 50px 0;
     border-radius: 25px;
   }
+
+  #about img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    padding: 10px 10px;
+    border-radius: 20px;
+  }
+
+  #about h3 {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Montserrat" !important;
+    text-transform: uppercase;
+    line-height: 14px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #about .background {
+    display: none;
+  }
+
+  #about .about-text {
+    margin-left: 10px;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  #about h2 {
+    font-size: xx-large;
+    color: #e8462b;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  #about .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    height: 120px;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 725px) {
   #about img {
     position: absolute;
     top: 50%;
@@ -316,31 +363,6 @@ header .intro-text {
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  #about .background {
-    display: none;
-  }
-  #about .about-text {
-    margin-left: 10px;
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  #about h2 {
-    font-size: xx-large;
-    color: #e8462b;
-    position: relative;
-    padding-bottom: 15px;
-  }
-  #about .box1,
-  .box2,
-  .box3,
-  .box4,
-  .box5,
-  .box6 {
-    height: 120px;
-    border-radius: 25px;
   }
 }
 /* Services Section */
@@ -577,7 +599,7 @@ header .intro-text {
 #contact h2:after {
   position: absolute;
   content: "";
-  background-color: rgba(255, 255, 255, 0.3);;
+  background-color: rgba(255, 255, 255, 0.3);
   height: 4px;
   width: 60px;
   bottom: 0;

@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import { Contact } from "../components/contact";
-import "../assets/Events.css";
+import "../assets/css/Events.css";
 import JsonData from "../data/data.json";
 import { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
@@ -68,17 +68,21 @@ export const BowlingAlley = (props) => {
         <Fade>
           <div className="container">
             <Tab>
-              <h2 className="title">Bowling Alley</h2>
-              <h3>Time - 11:30 AM </h3>
-              <h2>Registration Fees - ₹200 per Team</h2>
-
+              <div className="TitleBox">
+                <h2 className="title">Bowling Alley</h2>
+                <h3 className="info">
+                  Date - 26 & 27 November | Time -
+                  11:30 AM{" "}
+                </h3>
+                <h2 className="fee">Registration Fees - ₹200 per Team</h2>
+              </div>
               <Tabs>
                 <Tab label="About">
                   <div className="child">
                     <h2>PROBLEM STATEMENT</h2>
                     <p>
                       Cast a perfect bowling ball using cement concrete and hit
-                      the brick pins aiming maximum score.
+                      the brick pins aiming the maximum highest score.
                     </p>
                     <h2> MATERIALS PROVIDED</h2>
                     <p>
@@ -111,11 +115,11 @@ export const BowlingAlley = (props) => {
                         <li>Bowling Event</li>
                         <li>
                           Aim at the bricks arranged in the form of pins and
-                          swing your ball through the alley
+                          swing your ball through the alley.
                         </li>
                         <li>
                           Each team will get certain no. of chances (3 or more)
-                          to hit the pins
+                          to hit the pins.
                         </li>
                         <li>The team with maximum score will win.</li>
                       </ul>
@@ -125,7 +129,28 @@ export const BowlingAlley = (props) => {
                 </Tab>
                 <Tab label="Judgement Criteria">
                   <div className="child">
-            
+                    <h2>Judgement Criteria</h2>{" "}
+                    <p>
+                      <ul>
+                        <li>
+                          10 Pin Bowling The goal of bowling is simple – to
+                          knock down as many pins as possible. The more pins you
+                          knock down, the more points you score.
+                        </li>
+
+                        <li>
+                          Your game will consist of 6 frames (12 throws), with
+                          each frame consisting of two chances to knock down ten
+                          pins.
+                        </li>
+
+                        <li>
+                          Each pin you knock down earns you a point, while you
+                          can also score extra points by hitting “strikes” or
+                          “spares”.
+                        </li>
+                      </ul>
+                    </p>
                   </div>
                   <hr />
                 </Tab>

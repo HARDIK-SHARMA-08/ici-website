@@ -6,7 +6,7 @@ import JsonData from "../data/data.json";
 import { Jaipur } from "../components/Jaipur";
 import { Team } from "../components/Team";
 import { TechTeam } from "../components/TechTeam";
-import "../assets/AboutUs.css";
+import "../assets/css/AboutUs.css";
 
 export const AboutUs = (props) => {
   const [landingPageData, setLandingPageData] = useState({});

@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/Events.css";
+import "../assets/css/Events.css";
 import Navigation from "../components/Navigation";
 import JsonData from "../data/data.json";
 import { Contact } from "../components/contact";
@@ -35,7 +35,7 @@ export const Events = (props) => {
             <Link to="/brick-o-brick">
               <div className="item3">
                 <button className="Explore">Explore More</button>
-                <h2 className="Event3">Brick-O-Brick</h2>
+                <h2 className="Event3">Brick - O - Brick</h2>
               </div>
             </Link>
 

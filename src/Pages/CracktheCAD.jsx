@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import { Contact } from "../components/contact";
-import "../assets/Events.css";
+import "../assets/css/Events.css";
 import JsonData from "../data/data.json";
 import { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
@@ -65,66 +65,67 @@ export const CracktheCAD = (props) => {
       <Navigation />
       <div id="Events" className="text-center">
         <Fade delay="1000ms">
-          <Tab>
-            <h2 className="title">Crack the CAD</h2>
-            <h3>Time - 1:30 PM </h3>
-            <h2>Registration Fees - ₹50</h2>
-
-            <Tabs>
-              <Tab label="About">
-                <div className="child">
-                  <h2>PROBLEM STATEMENT</h2>
-                  <p>
-                    Draft a residential plan on a given plot of area 30’x60’
-                    according to the client's requirement.
-                  </p>
-                  <h2>Participation</h2>
-                  <p>Individual</p>
-                </div>
-                <hr />
-              </Tab>
-              <Tab label="Structure">
-                <div className="child">
-                  <h2>Round 1 </h2>
-                  <p>
-                    <ol>
-                      <li>Make the drawing in given time [90 MIN].</li>
-                      <li>Requirements of client: - plot area (30’x60’)</li>
-                      <li>Plot is North facing</li>
-                    </ol>
-                    <ul>
-                      <li>1 Bedrooms + Attached Bathroom</li>
-                      <li>1 Master Bedroom + Washroom</li>
-                      <li>1 Kitchen</li>
-                      <li>1 Common Washroom</li>
-                      <li>1 Lobby + Dining Area</li>
-                      <li>1 Drawing Room </li>
-                      <li>1 Small Garden </li>
-                      <li>Parking Area (1 Two-Wheeler + 1 Four-Wheeler)</li>
-                      <li>Passage + Washing Area </li>
-                      <li>1 Store Room </li>
-                      <li>1 Pooja Room </li>
-                    </ul>
-                  </p>
-                </div>
-                <hr />
-              </Tab>
-              <Tab label="Judgement Criteria">
-                <div className="child">
-                  <h2>JUDGING CRITERIA</h2>
-                  <p>
-                    <ul>
-                      <li>Time</li>
-                      <li>Aesthetics</li>
-                      <li>Requirement Fulfilled</li>
-                      <li>Planning</li>
-                    </ul>
-                  </p>
-                </div>
-                <hr />
-              </Tab>
-            </Tabs>
-          </Tab>
+          <div className="container">
+            <div className="TitleBox">
+              <h2 className="title">Crack the CAD</h2>
+              <h3 className="info">Date - 26 November | Time - 2:00 PM </h3>
+              <h2 className="fee">Registration Fees - ₹50</h2>
+            </div>
+          </div>
+          <Tabs>
+            <Tab label="About">
+              <div className="child">
+                <h2>PROBLEM STATEMENT</h2>
+                <p>
+                  Draft a residential plan on a given plot of area 30’x60’
+                  according to the client's requirements.
+                </p>
+                <h2>Participation</h2>
+                <p>Individual</p>
+              </div>
+              <hr />
+            </Tab>
+            <Tab label="Structure">
+              <div className="child">
+                <h2>Round 1 </h2>
+                <p>
+                  <ol>
+                    <li>Make the drawing in given time [90 MIN].</li>
+                    <li>Requirements of client: - plot area (30’x60’)</li>
+                    <li>Plot is North facing</li>
+                  </ol>
+                  <ul>
+                    <li>1 Bedrooms + Attached Bathroom</li>
+                    <li>1 Master Bedroom + Attached Bathroom</li>
+                    <li>1 Kitchen</li>
+                    <li>1 Common Washroom</li>
+                    <li>1 Lobby + Dining Area</li>
+                    <li>1 Drawing Room </li>
+                    <li>1 Small Garden </li>
+                    <li>Parking Area (1 Two-Wheeler + 1 Four-Wheeler)</li>
+                    <li>Passage + Washing Area </li>
+                    <li>1 Store Room </li>
+                    <li>1 Pooja Room </li>
+                  </ul>
+                </p>
+              </div>
+              <hr />
+            </Tab>
+            <Tab label="Judgement Criteria">
+              <div className="child">
+                <h2>JUDGING CRITERIA</h2>
+                <p>
+                  <ul>
+                    <li>Time</li>
+                    <li>Aesthetics</li>
+                    <li>Requirements Fulfilled</li>
+                    <li>Planning</li>
+                  </ul>
+                </p>
+              </div>
+              <hr />
+            </Tab>
+          </Tabs>
         </Fade>
       </div>
       <Contact data={landingPageData.Contact} />

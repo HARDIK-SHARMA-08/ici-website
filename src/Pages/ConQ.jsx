@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import JsonData from "../data/data.json";
 import { Contact } from "../components/contact";
-import "../assets/Events.css";
+import "../assets/css/Events.css";
 import { useState, useEffect } from "react";
 
 // class Tabs extends React.Component {
@@ -63,11 +63,14 @@ export const Quiz = (props) => {
   return (
     <>
       <Navigation />
-      <div id="Events" className="text-center">
-        <h2 className="title">Con Q - Quiz </h2>
-        <h3>27 November 2022</h3>
-        <h3>Time - 10:00 AM</h3>
-        <h2>Registration Fees- ₹50</h2>
+      <div className="container">
+        <div id="Events" className="text-center">
+          <div className="TitleBox">
+            <h2 className="title">Con Q - Quiz </h2>
+            <h3 className="info">Date - 27 November | Time - 10:00 AM</h3>
+            <h2 className="fee">Registration Fees - ₹50</h2>
+          </div>
+        </div>
         <div className="child">
           <h2>About</h2>
           <p>
