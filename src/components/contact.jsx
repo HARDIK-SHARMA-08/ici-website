@@ -1,10 +1,12 @@
+import logo from "../assets/img/logo/logo.png";
 export const Contact = (props) => {
   return (
     <div>
       <div id="contact">
         <div className="container">
           <div className="contact-item">
-          <h2>CONTACT US</h2>
+            <img src={logo} alt="" srcset="" className="logoimg" />
+            <h2>CONTACT US</h2>
             <div className="contact">
               <div className="contact-item">
                 <p>
@@ -74,8 +76,9 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; 2022 Copyright by SKIT Jaipur. Design by{" "}
+          <p>&copy; 2023 SKIT Jaipur</p>
+          <h2>
+            &#x2764; Developed by{" "}
             <a
               href="https://www.linkedin.com/in/hardik-sharma8/"
               target="_blank"
@@ -83,7 +86,7 @@ export const Contact = (props) => {
             >
               Hardik Sharma
             </a>
-          </p>
+          </h2>
         </div>
       </div>
     </div>

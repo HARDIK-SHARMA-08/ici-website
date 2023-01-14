@@ -567,6 +567,10 @@ header .intro-text {
   margin: 0 30px 0 30px;
 }
 
+#contact .logoimg {
+  width: 30%;
+}
+
 #contact .section-title {
   margin-bottom: 40px;
 }
@@ -589,10 +593,10 @@ header .intro-text {
   white-space: inherit;
 }
 #contact h2 {
-  color: #e8462b;
+  color: #ffffff;
   position: relative;
   font-size: xx-large;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
@@ -683,16 +687,21 @@ label {
   }
   #contact {
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     margin-right: 15px;
     margin-left: 15px;
     color: #fff;
     border-radius: 25px;
   }
+
+  #contact .logoimg {
+    width: 90%;
+  }
+
   #contact h2 {
-    color: #e8462b;
+    color: #ffffff;
     font-size: xx-large;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 15px;
     padding-bottom: 15px;
   }
@@ -714,10 +723,18 @@ label {
 }
 #footer p {
   color: #888;
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#footer h2 {
+  color: #888;
+  text-transform: inherit;
+  font-size: 30px;
 }
 #footer a {
   color: #e8462b;
+  
 }
 #footer a:hover {
   border-bottom: 2px solid #e8462b;
