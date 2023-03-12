@@ -33,6 +33,7 @@ class Navigation extends Component {
           <div className="HamBurgerIcon" onClick={this.handleClick}>
             <Hamburger rounded size={25}></Hamburger>
           </div>
+          
           <div className={this.state.clicked ? "NavMenu bg" : "NavMenu"}> </div>
           <ul className={this.state.clicked ? "NavMenu active" : "NavMenu"}>
             <li className="NavBarItem">

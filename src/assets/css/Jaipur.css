@@ -1,8 +1,9 @@
 #Jaipur {
-  padding: 0px 40px 0px 40px;
+  padding: 2rem 5rem 0px 5rem;
   max-width: auto;
   align-items: center;
-  z-index: 0;
+  z-index: -1;
+  background-color: #ffffff;
 }
 
 #Jaipur ul{

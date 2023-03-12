@@ -72,7 +72,6 @@ hr {
 
 /* Header Section */
 .intro {
-  display: table;
   width: 100%;
   height: 100vh;
   padding: 0;
@@ -83,7 +82,6 @@ hr {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  overflow: hidden;
 }
 /* .intro .overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -520,6 +518,7 @@ header .intro-text {
 /* Team Section */
 #team {
   padding: 10px 0;
+  background-color: #ffffff;
 }
 #team h2 {
   color: #e8462b;

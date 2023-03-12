@@ -77,8 +77,8 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>&copy; 2023 SKIT Jaipur</p>
-          <h2>
-            &#x2764; Developed by{" "}
+          <h3>
+            Developed with &#x2764; by{" "}
             <a
               href="https://www.linkedin.com/in/hardik-sharma8/"
               target="_blank"
@@ -86,7 +86,7 @@ export const Contact = (props) => {
             >
               Hardik Sharma
             </a>
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
